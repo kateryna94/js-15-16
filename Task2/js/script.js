@@ -1,6 +1,6 @@
 'use strict';
 
-class human {
+class Human {
   constructor(name, age, sex, height, weight) {
     this.name = name;
     this.age = age;
@@ -11,7 +11,7 @@ class human {
 
 }
 
-class student  extends human {
+class Student  extends Human {
   constructor(name, age, sex, height, weight, placeOfStudy, scholarship) {
     super(name, age, sex, height, weight);
     this.placeOfStudy = placeOfStudy;
@@ -22,7 +22,7 @@ class student  extends human {
   }
 }
 
-class worker extends human {
+class Worker extends Human {
   constructor(name, age, sex, height, weight, placeOfWork, salary) {
     super(name, age, sex, height, weight);
     this.placeOfWork = placeOfWork;
@@ -34,16 +34,16 @@ class worker extends human {
 }
 
 
-let Student = new student('Alex', 19, 'male', 1.87, 85, 'KPI', 900);
-let newStudent = new student('Anton', 20, 'male', 1.70, 67, 'KNLU', 'none');
-let Worker = new worker ('Kate', 22, 'female', 1.68, 57, 'EPAM', '1000$');
-let newWorker = new worker ('Igor', 45, 'male', 1.93, 95, 'school', 5000);
+let student = new Student('Alex', 19, 'male', 1.87, 85, 'KPI', 900);
+let newStudent = new Student('Anton', 20, 'male', 1.70, 67, 'KNLU', 'none');
+let worker = new Worker ('Kate', 22, 'female', 1.68, 57, 'EPAM', '1000$');
+let newWorker = new Worker ('Igor', 45, 'male', 1.93, 95, 'school', 5000);
 
 
-console.log(Student);
-console.log(Worker);
+console.log(student);
+console.log(worker);
 console.log(newStudent);
 console.log(newWorker);
 
 // Student.watchSeries();
-Worker.work();
+worker.work();
